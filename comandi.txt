@@ -1,0 +1,34 @@
+SERVER
+gcc -Wall -o server server.c funzioni_condivise.o -lpthread
+
+CLIENT
+gcc -Wall -o client client.c funzioni_condivise.o            
+
+FUNZIONI_CONDIVISE
+gcc -Wall -o funzioni_condivise.o -c funzioni_condivise.c    
+
+
+
+AVVIO SERVER
+./server -a 127.0.0.1 -p 8080 -d mateol
+
+
+
+PROVE
+
+-W:
+-f con solo il file nel path e basta
+-f con il path e basta
+-f con solo il file e -o con solo il file
+-f con il path e -o con solo il file
+-f con solo il file e -o con il path
+-f con il path e -o con il path
+
+
+-R
+-f con solo il file nel path e basta
+-f con il path e basta
+-f con solo il file e -o con solo il file
+-f con il path e -o con solo il file
+-f con solo il file e -o con il path
+-f con il path e -o con il path
