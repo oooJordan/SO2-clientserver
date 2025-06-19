@@ -23,18 +23,20 @@ gcc -Wall -o client client.c funzioni_condivise.o
 ---
 
 # Esecuzione
-
+```bash
 ./server -a <indirizzo_ip> -p <porta> -d <directory>
 -a: indirizzo IP su cui ascoltare (es: 127.0.0.1)
 -p: numero di porta (es: 8080)
 -d: directory in cui leggere/scrivere i file gestiti
-
+```
+---
 ## Comandi client
 Il client può inviare due tipi principali di richieste al server:
-
+```bash
 -W (scrittura file sul server) -> Permette di inviare un file al server.
 -R (richiesta di lettura file dal server) -> Scarica un file dal server.
-
+```
+---
 
 ## Funzionalità
 1) Server TCP multi-thread
