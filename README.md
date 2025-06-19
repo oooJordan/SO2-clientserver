@@ -20,8 +20,9 @@ gcc -Wall -o server server.c funzioni_condivise.o -lpthread
 # Client
 gcc -Wall -o client client.c funzioni_condivise.o
 
---- 
-## Esecuzione
+---
+
+# Esecuzione
 
 ./server -a <indirizzo_ip> -p <porta> -d <directory>
 -a: indirizzo IP su cui ascoltare (es: 127.0.0.1)
