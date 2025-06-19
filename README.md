@@ -19,7 +19,7 @@ gcc -Wall -o server server.c funzioni_condivise.o -lpthread
 
 # Client
 gcc -Wall -o client client.c funzioni_condivise.o
-
+```
 ---
 
 # Esecuzione
